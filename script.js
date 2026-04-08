@@ -53,7 +53,7 @@
       e cole abaixo substituindo 'COLE_SUA_URL_AQUI'
    =========================== */
 
-const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyhnYD_hbgjnnNAsjJ0c6vrt0NdFYAC1i85t8lBmEHXSxGgNn_iKb5tZf-HWL8PLT-POA/exec';
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbymaF7-9etkwfQoUT5cXTSpKygskz0I9L_0nSVjaLFWevW3mlFJWHvO5AKcO7IplHZx/exec';
 
 /* ===========================
    LISTA DE PRESENTES
@@ -156,12 +156,8 @@ async function loadState() {
 
 async function saveToSheets(giftId, buyerName) {
   try {
-    const res = await fetch(APPS_SCRIPT_URL, {
-      method:  'POST',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body:    JSON.stringify({ id: giftId, name: buyerName }),
-      redirect: 'follow',
-    });
+    const url = `${APPS_SCRIPT_URL}?action=save&id=${encodeURIComponent(giftId)}&name=${encodeURIComponent(buyerName)}`;
+    const res = await fetch(url, { cache: 'no-store' });
     return await res.json();
   } catch {
     return { error: 'network' };
