@@ -1,4 +1,23 @@
 /* ===========================
+   LOADING BAR
+   =========================== */
+#loading-bar-wrap {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 3px;
+  z-index: 9999;
+  background: transparent;
+}
+#loading-bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #c9748f, #e8c8b0);
+  transition: width 0.4s ease;
+  border-radius: 0 2px 2px 0;
+}
+
+/* ===========================
    RESET & VARIABLES
    =========================== */
 * {

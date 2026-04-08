@@ -11,6 +11,8 @@
   <link rel="icon" type="image/x-icon" href="style/favicon.avif">
 </head>
 <body>
+  <!-- BARRA DE CARREGAMENTO -->
+  <div id="loading-bar-wrap"><div id="loading-bar"></div></div>
 
   <!-- HERO -->
   <section class="hero">
@@ -207,7 +209,7 @@
       <div class="modal-gift" id="modal-gift-name"></div>
       <label class="modal-label">Seu nome completo</label>
       <input class="modal-input" id="buyer-name" type="text" placeholder="Ex: Maria Silva" maxlength="60">
-      <button class="modal-submit" onclick="confirmGift()">Confirmar presente ♡</button>
+      <button class="modal-submit" id="modal-confirm-btn" onclick="confirmGift()">Confirmar presente ♡</button>
       <p class="modal-note">Seu nome ficará salvo para o casal saber quem trouxe o presente.</p>
     </div>
   </div>
