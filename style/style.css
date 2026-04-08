@@ -906,31 +906,57 @@ footer {
     transform: rotate(90deg);
     display: none;
   }
-}
 
-@media (max-width: 640px) {
-  .photo-mosaic {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 160px 160px;
+  /* Abas de categoria: scroll horizontal no mobile */
+  .cat-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    justify-content: flex-start;
+    padding-bottom: 6px;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
-  .photo-item--featured {
-    grid-row: auto;
+  .cat-tabs::-webkit-scrollbar {
+    display: none;
   }
 
-  .mosaic-section {
-    padding: 2.5rem 1rem 2rem;
+  .cat-tab {
+    flex-shrink: 0;
+    font-size: 0.82rem;
+    padding: 8px 14px;
   }
 }
 
 @media (max-width: 480px) {
   .gift-grid {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   .gift-card {
-    padding: 1rem;
+    padding: 0.9rem;
+  }
+
+  .gift-name {
+    font-size: 0.92rem;
+  }
+
+  .gift-btn {
+    font-size: 0.78rem;
+    padding: 9px 0;
+    gap: 4px;
+  }
+
+  .gift-btn svg {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
   }
 
   .section {
@@ -947,11 +973,6 @@ footer {
 
   .stat-num {
     font-size: 1.3rem;
-  }
-
-  .cat-tab {
-    font-size: 0.8rem;
-    padding: 6px 12px;
   }
 
   .modal {
