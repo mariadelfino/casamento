@@ -62,7 +62,7 @@ const STORAGE_KEY = 'cha_panela_gifts_v1';
 
 const gifts = [
   { id: 1,  name: 'Medidor',                                   cat: '🍳 Utensílios' },
-  { id: 2,  name: 'Bandejas',                                   cat: '🍳 Utensílios' },
+  { id: 2,  name: 'Bandejas/tigelas',                            cat: '🍳 Utensílios' },
   { id: 3,  name: 'Rodo',                                       cat: '🧹 Limpeza'    },
   { id: 4,  name: 'Sanduicheira',                               cat: '🍳 Utensílios' },
   { id: 5,  name: 'Funil',                                      cat: '🍳 Utensílios' },
@@ -97,7 +97,7 @@ const gifts = [
   { id: 34, name: 'Varal',                                      cat: '🧹 Limpeza'    },
   { id: 35, name: 'Vassoura',                                   cat: '🧹 Limpeza'    },
   { id: 36, name: 'Pano de chão',                              cat: '🧹 Limpeza'    },
-  { id: 37, name: 'Cesto de roupas',                            cat: '🧹 Limpeza'    },
+  { id: 37, name: 'Cesto de roupas (Branco)',                    cat: '🧹 Limpeza'    },
   { id: 38, name: 'Toalhas de banho',                           cat: '🛁 Banheiro'   },
   { id: 39, name: 'Toalhas de rosto',                           cat: '🛁 Banheiro'   },
   { id: 40, name: 'Lixeira banheiro (branco ou preto)',         cat: '🛁 Banheiro'   },
@@ -112,6 +112,12 @@ const gifts = [
   { id: 49, name: 'Jogo de tapetes para banheiro',              cat: '🛁 Banheiro'   },
   { id: 50, name: 'Varal portátil',                             cat: '🧹 Limpeza'    },
   { id: 51, name: 'Cabide de madeira',                          cat: '🏠 Casa'       },
+  { id: 52, name: 'Cestinhas com tampa',                        cat: '🏠 Casa'       },
+  { id: 53, name: 'Jarra de água/suco',                         cat: '🍽️ Louças'     },
+  { id: 54, name: 'Porta escova de dentes',                     cat: '🛁 Banheiro'   },
+  { id: 55, name: 'Escova de vaso sanitário',                   cat: '🛁 Banheiro'   },
+  { id: 56, name: 'Descascador de legumes',                     cat: '🍳 Utensílios' },
+  { id: 57, name: 'Luva térmica',                               cat: '🍳 Utensílios' },
 ];
 
 /* ===========================
