@@ -118,6 +118,11 @@ const gifts = [
   { id: 55, name: 'Escova de vaso sanitário',                   cat: '🛁 Banheiro'   },
   { id: 56, name: 'Descascador de legumes',                     cat: '🍳 Utensílios' },
   { id: 57, name: 'Luva térmica',                               cat: '🍳 Utensílios' },
+  { id: 58, name: 'Chaleira Elétrica',                          cat: '⚡ Eletrodomésticos' },
+  { id: 59, name: 'Kit Costura',                                cat: '🏠 Casa'       },
+  { id: 60, name: 'Rolo de massa',                              cat: '🍳 Utensílios' },
+  { id: 61, name: 'Kit Tupperware (plástico)',                  cat: '🍳 Utensílios' },
+  { id: 62, name: 'Kit Tupperware (vidro)',                     cat: '🍳 Utensílios' },
 ];
 
 /* ===========================
